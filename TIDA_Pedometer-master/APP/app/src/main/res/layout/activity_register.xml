@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobileapp.hhx.pedometer.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/itemsLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/logoLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:src="@mipmap/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textLayout"
+            android:layout_toRightOf="@id/logoLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="用户名"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="密码"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="验证密码"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="性别"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="身高"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="体重"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/textLayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/rgsUsername"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right" />
+
+            <EditText
+                android:id="@+id/rgsPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right"/>
+
+            <EditText
+                android:id="@+id/rgsCheckPswd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <CheckBox
+                    android:id="@+id/manCkbx"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="男"
+                    android:textSize="20sp"/>
+
+                <CheckBox
+                    android:id="@+id/womanCkbx"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="女"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/rgsHeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="单位:cm"
+                android:gravity="right"/>
+
+            <EditText
+                android:id="@+id/rgsWeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="单位:kg "
+                android:gravity="right"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:textSize="25sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobileapp.hhx.pedometer.Homepage_ModifyPswdActivity">
+
+    <TextView
+        android:id="@+id/txtViewTmp1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="请输入原密码："
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edtCheckPswd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/txtViewTmp2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="请输入新密码："
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edtNewPswd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/txtViewTmp3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="请再次输入新密码："
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edtCheckNewPswd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnCheckPswd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="check"/>
+
+    <Button
+        android:id="@+id/btnSavePswd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="commit"/>
+</LinearLayout>

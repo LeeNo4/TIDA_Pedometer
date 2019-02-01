@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Pedometer</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_ground">GroundActivity</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="title_activity_homepage__settings">Homepage_SettingsActivity</string>
+
+    <array name="Actions">
+
+        <item>未知</item>
+        <item>静止</item>
+        <item>躁动</item>
+        <item>走路</item>
+        <item>跑步</item>
+        <item>上楼梯</item>
+        <item>下楼梯</item>
+        <item>乘坐扶梯（向上）</item>
+        <item>乘坐扶梯（向下）</item>
+        <item>乘坐电梯（向上）</item>
+        <item>乘坐电梯（向下）</item>
+        <item>坐着休息</item>
+        <item>看电视</item>
+        <item>拉东西</item>
+        <item>擦东西</item>
+        <item>叠衣服</item>
+        <item>刷牙</item>
+        <item>力量训练</item>
+        <item>修仙</item>
+        <item>躺着休息</item>
+        <item>仰卧起坐</item>
+
+    </array>
+
+    <array name="Positions">
+
+        <item>未知</item>
+        <item>手持</item>
+        <item>甩臂</item>
+        <item>裤子口袋（左右）</item>
+        <item>裤子口袋（屁股）</item>
+        <item>大衣口袋</item>
+        <item>口袋（胸部）</item>
+        <item>口袋（肩膀）</item>
+        <item>口袋（胳臂）</item>
+        <item>口袋（手背）</item>
+        <item>口袋（腰部）</item>
+        <item>口袋（后背）</item>
+
+    </array>
+</resources>

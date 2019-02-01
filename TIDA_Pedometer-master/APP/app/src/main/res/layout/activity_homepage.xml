@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobileapp.hhx.pedometer.HomepageActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutUserInfo"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:src="@mipmap/photo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+
+        <ImageView
+            android:id="@+id/moreInfo"
+            android:src="@mipmap/more"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutTmpID1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/photo"
+            android:layout_toLeftOf="@id/moreInfo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:id="@+id/remark"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/black"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutUserInfo"
+        android:layout_above="@id/navigation"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/logoTmpID1"
+                android:src="@mipmap/logo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/txtModifyPswd"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/logoTmpID1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="修改密码"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/more"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/logoTmpID2"
+                android:src="@mipmap/logo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/txtMessages"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/logoTmpID2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="消息中心"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:src="@mipmap/more"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/logoTmpID3"
+                android:src="@mipmap/logo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/txtHelp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/logoTmpID3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="使用帮助"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:src="@mipmap/more"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
